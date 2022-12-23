@@ -1,3 +1,3 @@
-export function sayHi() {
-  console.log('Hi!')
+export function sayHi(name: string) {
+  console.log('Hi, ' + name +'!');
 }

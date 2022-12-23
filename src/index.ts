@@ -1,5 +1,5 @@
 import { sayHi } from "./components";
 
-console.log('Hello world!');
+console.log('Hello, world!');
 
-sayHi();
+sayHi('World');
