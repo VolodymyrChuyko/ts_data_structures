@@ -7,7 +7,7 @@
     "build": "rm -rf build && tsc",
     "prestart": "npm run build",
     "start": "node build/",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx jest",
     "lint": "npx eslint . --ignore-path .gitignore",
     "dev": "nodemon --watch src -e ts,ejs --exec npx ts-node src",
     "prepare": "husky install"
@@ -21,8 +21,10 @@
     "@typescript-eslint/parser": "^5.47.0",
     "eslint": "^8.30.0",
     "husky": "^8.0.2",
+    "jest": "^29.3.1",
     "lint-staged": "^13.1.0",
     "nodemon": "^2.0.20",
+    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
